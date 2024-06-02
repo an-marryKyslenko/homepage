@@ -285,3 +285,23 @@ fill: var(--icon-color);
 height: 1.1428rem;
 vertical-align: text-bottom;
 }
+
+.facts {}
+
+.facts__header {
+	color: var(--secondary-text-color);
+text-align: center;
+margin-bottom: 15px;
+}
+
+.facts__body {
+	display: flex;
+flex-wrap: wrap;
+color: var(--secondary-text-color);
+padding-left: 20px;
+		}
+
+.facts__item {
+	flex: 0 1 50%;
+		}
+
