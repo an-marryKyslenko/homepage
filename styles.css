@@ -50,11 +50,11 @@ margin-bottom: 15px;
 
 @media screen and (max-width: 576px) {
 .main-info,
-.contact_info_container {
+.contact-info__container {
 	flex-direction: column;
 }
 
-.contact_info_container {
+.contact-info__container {
 	align-items: center;
 }
 
@@ -130,8 +130,6 @@ border: 3px solid;
 border-color: var(--text-decoration-color);
 }
 
-Intro and skills styles
-
 .intro {
 display: flex;
 justify-content: start;
@@ -153,7 +151,7 @@ vertical-align: text-bottom;
 fill: var(--text-decoration-color);
 }
 
-.intro_text {
+.intro__text {
 color: var(--secondary-text-color);
 text-align: justify;
 }
@@ -221,9 +219,7 @@ padding-left: 20px;
 flex: 1 1 40%;
 }
 
-.additional-info__education {
-margin-bottom: 20px;
-}
+
 
 .additional-info__education-header {
 color: var(--secondary-text-color);
@@ -231,6 +227,9 @@ text-align: left;
 margin-bottom: 20px;
 }
 
+.additional-info__education-university:not(:last-child){
+	margin-bottom: 20px;
+}
 .additional-info__education-university-durability {
 color: var(--durability-text-color);
 text-align: left;
@@ -241,23 +240,48 @@ font-size: 15px;
 .additional-info__education-university-speciality {
 color: var(--primary-text-color);
 text-align: left;
-margin-bottom: 10px;
+margin-bottom: 0px;
 }
 
 .additional-info__education-university-name {
-color: var(--secondary-text-color);
+color: var(--text-decoration-color);
+font-size: 12px;
 }
 
 .additional-info__languages {
-margin-bottom: 20px;
+display: flex;
+flex-wrap: wrap;
+column-gap: 20px;
 }
 
 .additional-info__languages-header {
 color: var(--secondary-text-color);
 text-align: left;
 margin-bottom: 20px;
+flex: 100%;
 }
 
 .additional-info__languages-item {
 color: var(--secondary-text-color);
+text-decoration: none;
+display: flex;
+justify-content: start;
+flex: 1/3
+}
+
+.additional-info__languages-item-wrapper{
+margin-right: 10px;
+width: 20px;
+height: 20px;
+display: flex;
+justify-content: center;
+}
+
+.additional-info__languages-item-icon path {
+fill: var(--icon-color);
+}
+
+.additional-info__languages-item-icon {
+height: 1.1428rem;
+vertical-align: text-bottom;
 }
